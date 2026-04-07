@@ -1,0 +1,13 @@
+name: Path-filtering
+
+on:
+  push:
+    paths:
+      - 'src/*'
+
+jobs:
+  job1:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Triggered src"
+        run: echo "src is found"
