@@ -1,0 +1,17 @@
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  env:
+    run-on: ubuntu-latest
+
+    env:
+      APP_NAME: demo-app
+      ENVIRONMENT: dev
+
+    steps:
+      - name: Print App Info
+        run: echo "App: $APP_NAME running in $ENVIRONMENT environment"
+        
