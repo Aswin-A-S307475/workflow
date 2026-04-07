@@ -10,4 +10,4 @@ jobs:
         uses: actions/checkout@v4
 
       - name: "Run trigger"
-        uses: echo "HeLLOOO"
+        run: echo "HeLLOOO"
