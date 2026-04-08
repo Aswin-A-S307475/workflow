@@ -4,9 +4,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - run: |
-          echo "Hello from Build Stage" > app.txt
-          echo "File created successfully"
+      - run: echo "File created successfully"
 
     test:
       needs: build
